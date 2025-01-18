@@ -102,6 +102,10 @@ footer {
     border:1px dashed rgb(148 163 184 / var(--tw-bg-opacity, 1))
 }
 
+#blog-data p {
+    line-height:2em;
+}
+
 #main-content {
     width:800px;
     margin:2em auto;
