@@ -1,0 +1,10 @@
+<nav>
+    <a href="https://tileimagegen.uk">
+        <span>Generator</span>
+    </a>
+    {% for page in pages.children %}
+        <a href="{{ page.url }}">
+            <span>{{ page.menu }}</span>
+        </a>
+    {% endfor %}
+</nav>

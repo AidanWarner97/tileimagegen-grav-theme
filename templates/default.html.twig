@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ grav.language.getLanguage }}">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tile Image Generator Updates</title>
+    <link rel="icon" href="{{ url('theme://images/logo_transparent.png') }} type="image/png">
+    <link rel="stylesheet" href="{{ url('theme://css/custom.css') }}">
+</head>
+<body>
+    <div id="sidebar">
+        {% include 'partials/sidebar.html.twig' %}
+    </div>
+    <div id="content">
+        {{ page.content|raw }}
+    </div>
+</body>
+</html>

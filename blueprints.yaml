@@ -1,0 +1,20 @@
+name: TileImageGen
+version: 1.0.0
+description: A simple Grav theme built for Tile Image Gen.
+icon: columns
+author:
+  name: Aidan Warner
+  email: aidan@awarner.co.uk
+  url: https://awarner.co.uk
+form:
+  fields:
+    enabled:
+      type: toggle
+      label: Enabled
+      highlight: 1
+      default: 1
+      options:
+        1: 'Yes'
+        0: 'No'
+      validate:
+        type: bool

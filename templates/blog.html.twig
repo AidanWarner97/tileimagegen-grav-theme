@@ -1,0 +1,21 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    <h1>{{ page.title }}</h1>
+    <ul class="blog-list">
+        {% for post in page.collection %}
+            <li>
+                <h2><a href="{{ post.url }}">{{ post.title|raw }}</a></h2>
+                <p>{{ post.date|date("d M Y") }} by {{ post.header.author|raw }}</p>
+                <p>{{ post.summary(150)|raw }}</p>
+                <a href="{{ post.url }}" class="readmore">Read more...</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    {% if config.plugins.pagination.enabled and page.collection.params.pagination %}
+        <div class="pagination">
+            {{ page.collection.params.pagination|raw }}
+        </div>
+    {% endif %}
+{% endblock %}
